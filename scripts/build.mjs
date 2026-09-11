@@ -6,6 +6,8 @@ export async function build(profile) {
   const html = render(data);
   await writeFile(new URL('docs/index.html',root), html);
   await writeFile(new URL('docs/.nojekyll',root), '');
+  await writeFile(new URL('index.html',root), html.replace('href="./style.css"','href="./docs/style.css"'));
+  await writeFile(new URL('.nojekyll',root), '');
   return html;
 }
 if (process.argv[1] && new URL(`file://${process.argv[1]}`).href === import.meta.url) {

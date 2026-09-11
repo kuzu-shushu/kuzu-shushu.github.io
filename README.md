@@ -10,9 +10,9 @@ Requires Node.js 20 or newer. From this repository:
 npm run dev
 ```
 
-Open **http://127.0.0.1:4173/edit**. Edit text, add or remove education/research/skill entries, choose an accent, and switch between desktop and mobile previews. **Save changes** updates `content/profile.json` and regenerates `docs/index.html`. Unsaved edits live only in the open page and disappear when you leave. Use **Open page** for the full-width page; refresh that separate page after saving.
+Open **http://127.0.0.1:4173/edit**. Edit text, add or remove education/research/skill entries, choose an accent, and switch between desktop and mobile previews. **Save changes** updates `content/profile.json` and regenerates both `index.html` and `docs/index.html`. Unsaved edits live only in the open page and disappear when you leave. Use **Open page** for the full-width page; refresh that separate page after saving.
 
-The editor server binds only to loopback and validates the request origin and a per-run token before accepting writes. It only serves an explicit list of preview assets. The editor and local server are outside the published `docs/` folder.
+The editor server binds only to loopback and validates the request origin and a per-run token before accepting writes. It only serves an explicit list of preview assets. The editor requires this local server; it cannot write files from GitHub Pages.
 
 ## Edit in code
 
@@ -39,7 +39,7 @@ git remote add origin https://github.com/kuzu-shushu/kuzu-shushu.github.io.git
 git push -u origin main
 ```
 
-3. On GitHub, open **Settings → Pages → Build and deployment**, select **Deploy from a branch**, then **main** and **/docs**, and save.
+3. On GitHub, open **Settings → Pages → Build and deployment**, select **Deploy from a branch**, then **main** and **/ (root)**, and save. Publishing from **/docs** also works; the build generates both entrypoints.
 4. Wait for GitHub Pages deployment to finish. After future edits, save/build and commit/push the updated profile and generated page.
 
 Saving in the editor updates the local repository; publish subsequent changes by committing and pushing. Official instructions: [Creating a GitHub Pages site](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site).
