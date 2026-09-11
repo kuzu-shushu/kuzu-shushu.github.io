@@ -28,7 +28,7 @@ const server = http.createServer(async(req,res)=>{
     let body='';
     for await (const chunk of req) {body+=chunk;if(Buffer.byteLength(body)>100000) return send(413,'Profile is too large.');}
     const data=validate(JSON.parse(body));
-    if(path==='/api/preview') return send(200,render(data),'text/html; charset=utf-8');
+    if(path==='/api/preview') return send(200,render(data).replace('<head>','<head><base href="/">'),'text/html; charset=utf-8');
     if(saving) return send(409,'Another save is in progress. Try again.');
     saving=true;
     try {
