@@ -1,0 +1,53 @@
+{
+  "name": "无敌鼠鼠大王",
+  "tagline": "Vanishment this World!",
+  "intro": "Exploring ideas, building things, and following curiosity wherever it leads.",
+  "note": "A work in progress. Sample details below.",
+  "education": [
+    {
+      "period": "20XX — Present",
+      "institution": "Your university",
+      "degree": "Graduate studies · Computer Science",
+      "detail": "Learning to ask better questions and turn ideas into thoughtful research."
+    },
+    {
+      "period": "20XX — 20XX",
+      "institution": "Your university",
+      "degree": "Bachelor’s degree · Computer Science",
+      "detail": "Foundations in algorithms, mathematics, and software engineering."
+    }
+  ],
+  "research": [
+    {
+      "title": "Artificial intelligence",
+      "description": "Understanding how intelligent systems learn, reason, and work with people."
+    },
+    {
+      "title": "Human–computer interaction",
+      "description": "Making technology more intuitive, useful, and considerate of the people who use it."
+    },
+    {
+      "title": "Systems & open source",
+      "description": "Building reliable tools and sharing the small discoveries along the way."
+    }
+  ],
+  "skills": [
+    {
+      "category": "Languages",
+      "items": "Python, C++, JavaScript"
+    },
+    {
+      "category": "Tools",
+      "items": "Git, Linux, LaTeX"
+    },
+    {
+      "category": "Practice",
+      "items": "Research, Prototyping, Data analysis"
+    }
+  ],
+  "contactText": "Always happy to exchange ideas, talk research, or make something together.",
+  "email": "hello@example.com",
+  "github": "https://github.com/kuzu-shushu",
+  "website": "",
+  "accent": "violet"
+}
